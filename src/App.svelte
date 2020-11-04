@@ -61,7 +61,7 @@ import Testimonies from "./components/Testimonies.svelte";
     margin: 0 auto;
     margin-top: -616px; /*Solution Height + 8*/
     z-index: -10;
-    background-color: red;
+   /*  background-color: red; */
   }
   .design img {
     margin: 0 auto;

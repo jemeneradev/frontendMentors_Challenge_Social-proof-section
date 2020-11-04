@@ -44,7 +44,7 @@
 
   .review .review__stars {
     color: #EF9546;
-    background-image: url(./images/icon-star.svg);
+    background-image: url(images/icon-star.svg);
     /* background-repeat: no-repeat; */
     background-position: -1px 0px;
     background-size: 25px 17px;
