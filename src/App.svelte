@@ -37,7 +37,6 @@ import Testimonies from "./components/Testimonies.svelte";
 
   @media screen and (min-width: 1440px) {
     .solution {
-      max-width: 1400px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 65% 30%;

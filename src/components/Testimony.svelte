@@ -2,15 +2,16 @@
   export let client = "Past Customer";
   export let opinion = "";
   export let pic = "";
+  export let loc = 0;
 </script>
 
 <style>
-  /* .testimony,
+/*   .testimony,
   .testimony__contact,
-  .testimony__contact__pic */
+  .testimony__contact__pic
   .testimony__quotebody {
     outline: solid .5px white;
-  }
+  } */
   .testimony {
     position: relative;
     width: fit-content;
@@ -32,8 +33,8 @@
 
   .testimony .testimony__contact {
     position: relative;
-    max-width: 100%;
-    max-height: 5.9375em; /*95px*/
+    width: 100%;
+    height: 5.9375em; /*95px*/
     display: flex;
     font-family: "Spartan", sans-serif;
 
@@ -49,15 +50,15 @@
 
   .testimony .testimony__contact .testimony__contact__pic {
     position: relative;
-    max-width: 85px;
-    min-height: 95px;
+    width: 85px;
+    height: 95px;
     margin: 0;
     top: 0;
     left: 0;
   }
   .testimony .testimony__contact .testimony__contact__pic img {
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     position: relative;
     top: 40px;
@@ -65,17 +66,17 @@
   }
 
   .testimony .testimony__contact .testimony__contact__info {
-    max-width: 242px;
-    min-height: 95px;
+    width: 242px;
+    height: 95px;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 13px;
   }
 
   .testimony .testimony__contact .testimony__contact__info h1 {
-    max-width: 216px;
-    max-height: 19px;
+    width: 216px;
+    height: 19px;
     color: hsl(300, 24%, 96%);
     margin: 0;
     padding-top: 41px;
@@ -90,8 +91,8 @@
   }
 
   .testimony .testimony__contact .testimony__contact__info h2 {
-    max-width: 216px;
-    max-height: 19px;
+    width: 216px;
+    height: 19px;
     margin: 0;
     margin-top: 1px;
 
@@ -109,8 +110,8 @@
   .testimony .testimony__quote {
     margin: 0;
     position: relative;
-    max-width: 327px;
-    max-height: 130px;
+    width: 327px;
+    height: 130px;
     top: 0;
 
     /* padding-top: 12px;
@@ -173,9 +174,28 @@
       width: 285px;
     }
   } */
+
+  @media screen and (min-width: 1440px) {
+    .testimony {
+      /* background-color: red; */
+      /* opacity: .3; */
+      width: 350px;
+      height: 234px;
+      margin-top: calc(16px * var(--data-indent));
+    }
+    .testimony .testimony__quote{
+      height: 115px;
+    }
+    
+    .testimony .testimony__quote blockquote {
+      /* margin: 0; */
+      width: 88%;
+    }
+  }
+
 </style>
 
-<div class="testimony" style="--data-testimony-index:0">
+<div class="testimony" style={`--data-indent:${loc};`}>
   <div class="testimony__contact">
     <div class="testimony testimony__contact testimony__contact__pic">
       <img src={pic} />
