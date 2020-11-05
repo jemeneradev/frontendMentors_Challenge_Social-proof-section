@@ -118,11 +118,11 @@
       </picture>
     </div>
   </div>
-  <div class="design">
+<!--   <div class="design">
     <picture>
       <source media="(min-width:1440px)" srcset="./design/desktop-design.jpg" />
       <source media="(max-width:1439px)" srcset="./design/mobile-design.jpg" />
       <img src="./design/mobile-design.jpg" alt="Mobile Design" />
     </picture>
-  </div>
+  </div> -->
 </main>
