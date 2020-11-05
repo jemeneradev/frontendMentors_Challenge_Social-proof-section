@@ -1,7 +1,7 @@
 <script>
   import Intro from "./components/Intro.svelte";
   import Reviews from "./components/Reviews.svelte";
-import Testimonies from "./components/Testimonies.svelte";
+  import Testimonies from "./components/Testimonies.svelte";
 </script>
 
 <style>
@@ -56,12 +56,34 @@ import Testimonies from "./components/Testimonies.svelte";
     }
   }
 
+  .top-pattern {
+    position: absolute;
+    top: 0px;
+    z-index: -10;
+    fill: blqck;
+  }
+  .bottom-pattern {
+    position: absolute;
+    top: 796px;
+    z-index: -10;
+  }
+  @media screen and (min-width: 1440px) {
+    .top-pattern {
+      top: 9px;
+      left: 8px;
+    }
+    .bottom-pattern {
+      top: 138px;
+      left: 364px;
+    }
+  }
+
   .design {
     position: absolute;
     margin: 0 auto;
     margin-top: -616px; /*Solution Height + 8*/
     z-index: -10;
-   /*  background-color: red; */
+    /*  background-color: red; */
   }
   .design img {
     margin: 0 auto;
@@ -73,17 +95,28 @@ import Testimonies from "./components/Testimonies.svelte";
     <Intro />
     <Reviews />
     <Testimonies />
-    <!-- <Review/> -->
-    <!-- <Testimony 
-			client={"Colton Smith"} 
-			opinion={ 
-			`We needed the same printed design
-			as the one we had ordered a week
-			prior. Not only did they find the original
-			order, but we also received it in time.
-			Excellent!`}
-			pic={"build/images/image-colton.jpg"} />
-    <Intro/> -->
+    <div class="top-pattern">
+      <picture>
+        <source
+          media="(min-width:1440px)"
+          srcset="./images/bg-pattern-top-desktop.svg" />
+        <source
+          media="(max-width:1439px)"
+          srcset="./images/bg-pattern-top-mobile.svg" />
+        <img src="./images/bg-pattern-top-mobile.svg" alt="Mobile Design" />
+      </picture>
+    </div>
+    <div class="bottom-pattern">
+      <picture>
+        <source
+          media="(min-width:1440px)"
+          srcset="./images/bg-pattern-bottom-desktop.svg" />
+        <source
+          media="(max-width:1439px)"
+          srcset="./images/bg-pattern-bottom-mobile.svg" />
+        <img src="./images/bg-pattern-bottom-mobile.svg" alt="Mobile Design" />
+      </picture>
+    </div>
   </div>
   <div class="design">
     <picture>
