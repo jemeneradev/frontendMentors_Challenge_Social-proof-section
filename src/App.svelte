@@ -37,6 +37,8 @@
 
   @media screen and (min-width: 1440px) {
     .solution {
+      position: relative;
+      top: -16px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 65% 30%;
