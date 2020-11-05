@@ -198,7 +198,7 @@
 <div class="testimony" style={`--data-indent:${loc};`}>
   <div class="testimony__contact">
     <div class="testimony testimony__contact testimony__contact__pic">
-      <img src={pic} />
+      <img src={pic} alt={`picture of ${client}`}/>
     </div>
     <div class="testimony__contact testimony__contact__info">
       <h1>{client}</h1>
