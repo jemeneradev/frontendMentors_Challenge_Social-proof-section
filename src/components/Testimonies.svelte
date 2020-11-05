@@ -4,19 +4,19 @@
   let testimonies = [
     {
       client: "Colton Smith",
-      pic: "https://i.ibb.co/Nt1kYkT/image-colton.jpg",
+      pic: "./images/image-colton.jpg",
       opinion:
         "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!",
     },
     {
       client: "Irene Roberts",
-      pic: "https://i.ibb.co/Rb0p9gZ/image-irene.jpg",
+      pic: "./images/image-irene.jpg",
       opinion:
         "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.",
     },
     {
       client: "Anne Wallace",
-      pic: "https://i.ibb.co/R41XZR4/image-anne.jpg",
+      pic: "./images/image-anne.jpg",
       opinion:
         "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone! ",
     },
